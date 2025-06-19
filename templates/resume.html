@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume | Sahithi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 text-gray-800 min-h-screen flex flex-col">
+
+  {% include 'navbar.html' %}
+
+  <main class="flex-grow px-6 py-10 max-w-6xl mx-auto">
+    <h1 class="text-5xl font-extrabold text-center text-indigo-700 mb-10">My Resume</h1>
+
+    <div class="flex justify-center mb-8">
+      <a href="{{ url_for('static', filename='sahithi.pdf') }}" download
+         class="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-purple-500 hover:to-pink-500 text-white px-6 py-3 rounded-full font-semibold shadow-md transition duration-300">
+        Download Resume (PDF)
+      </a>
+    </div>
+
+    <!-- Education -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-purple-700 mb-4">🎓 Education</h2>
+      <div class="space-y-6 border-l-4 border-purple-300 pl-4">
+        <div>
+          <h3 class="text-xl font-semibold text-indigo-800">Sri Vasavi Engineering College</h3>
+          <p class="italic">B.Tech in Artificial Intelligence and Machine Learning</p>
+          <p class="text-sm">CGPA: 8.53 (2022 – 2026)</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-indigo-800">Sri Chaitanya Junior College</h3>
+          <p class="italic">MPC</p>
+          <p class="text-sm">Percentage: 85% (2020 – 2022)</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-indigo-800">Sri Sai E.M High School</h3>
+          <p class="text-sm">CGPA: 8.5 (2020)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-pink-600 mb-4">🛠 Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-gray-700">
+        <span class="bg-white px-3 py-1 rounded-full shadow">Java</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">Python</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">ReactJS</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">Django</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">Flutter</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">HTML</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">CSS</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">JavaScript</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">SQL</span>
+        <span class="bg-white px-3 py-1 rounded-full shadow">Git</span>
+      </div>
+    </section>
+
+    <!-- Coursework -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-blue-600 mb-4">📘 Coursework</h2>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Design and Analysis of Algorithms</li>
+        <li>Object Oriented Programming</li>
+        <li>Operating System</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-emerald-600 mb-4">💡 Projects</h2>
+      <ul class="space-y-3 text-gray-800">
+        <li>
+          <strong>Image Classification using Deep Learning</strong><br />
+          Classifies fruits and vegetables using AI, used in agriculture and quality control.
+        </li>
+        <li>
+          <strong>Heart Disease Analysis</strong><br />
+          Predicts heart disease risks with ML models and patient data.
+        </li>
+        <li>
+          <strong>Online Food Prediction</strong><br />
+          Recommends meals based on user behavior and history.
+        </li>
+        <li>
+          <strong>Online Shopping Cart (React JS)</strong><br />
+          E-commerce UI with cart management using React Router and Hooks.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Certifications -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-orange-500 mb-4">🏅 Certifications & Achievements</h2>
+      <ul class="list-disc list-inside text-gray-800">
+        <li>English Proficiency - GETS (CEFER)</li>
+        <li>Intern at BlackBucks - AI-ML-DS</li>
+        <li>Microsoft Azure AI Fundamentals</li>
+        <li>Oracle Machine Learning & Cloud Infrastructure</li>
+        <li>Generative AI - Oracle Cloud Infra 2024</li>
+        <li>Google Gemini Mastery (Udemy)</li>
+        <li>Django & Flutter Web/Mobile Development</li>
+        <li>ReactJS Certification - BlackBucks</li>
+        <li>AWS Cloud Internship - EduSkills</li>
+        <li>CSS & JS (Udemy)</li>
+      </ul>
+    </section>
+
+    <!-- Activities -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-fuchsia-600 mb-4">🎯 Activities</h2>
+      <p class="text-gray-700">
+        Led a community survey on women empowerment engaging over 10+ residents to assess and improve local safety.
+      </p>
+    </section>
+
+    <!-- Contact / Links -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold text-cyan-600 mb-4">🔗 Links & Contact</h2>
+      <p>
+        📧 <a href="mailto:purnasahithi625@gmail.com" class="text-blue-600 hover:underline">purnasahithi625@gmail.com</a><br />
+        💼 <a href="https://www.linkedin.com/in/purnasatyasaisahithi" class="text-blue-600 hover:underline" target="_blank">LinkedIn Profile</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-r from-purple-200 to-pink-200 text-center text-sm py-4 text-gray-700 border-t border-gray-300">
+    &copy; 2025 Purna Sathya Sai Sahithi Kamma. All rights reserved.
+  </footer>
+</body>
+</html>

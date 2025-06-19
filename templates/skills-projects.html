@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skills & Projects | Sahithi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-tr from-purple-50 via-indigo-50 to-pink-50 text-gray-900 min-h-screen">
+
+  {% include 'navbar.html' %}
+
+  <main class="max-w-6xl mx-auto py-16 px-6">
+    <section>
+      <h2 class="text-4xl font-extrabold text-indigo-800 mb-6 border-b-4 border-pink-300 inline-block">Skills</h2>
+      <ul class="list-inside list-disc space-y-2 text-lg ml-4">
+        <li><span class="font-semibold text-purple-700">Languages:</span> Python, Java, SQL</li>
+        <li><span class="font-semibold text-purple-700">Domains:</span> Machine Learning, Deep Learning, Data Analysis</li>
+        <li><span class="font-semibold text-purple-700">Tools:</span> Flask, Streamlit, Bootstrap, Tailwind</li>
+      </ul>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="text-4xl font-extrabold text-indigo-800 mb-6 border-b-4 border-pink-300 inline-block">Projects</h2>
+      <div class="grid gap-8 md:grid-cols-2">
+        <!-- Project Card -->
+        <div class="bg-white shadow-xl hover:shadow-2xl transition duration-300 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-purple-800">Image Classification with TensorFlow</h3>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            Built a deep learning model using Convolutional Neural Networks (CNNs) to classify fruits and vegetables. Deployed with Streamlit.
+          </p>
+        </div>
+
+        <!-- You can duplicate this block for more projects -->
+        <div class="bg-white shadow-xl hover:shadow-2xl transition duration-300 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-purple-800">Heart Disease Prediction</h3>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            ML model using health data to predict heart disease risk. Implemented with Flask and visualized results using Plotly.
+          </p>
+        </div>
+
+        <div class="bg-white shadow-xl hover:shadow-2xl transition duration-300 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-purple-800">Online Food Prediction System</h3>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            A recommendation system that suggests food items based on user behavior, preferences, and previous orders.
+          </p>
+        </div>
+
+        <div class="bg-white shadow-xl hover:shadow-2xl transition duration-300 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-purple-800">Shopping Cart with ReactJS</h3>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            A fully responsive eCommerce web page built using ReactJS and Bootstrap. Supports cart functionality and product filtering.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
